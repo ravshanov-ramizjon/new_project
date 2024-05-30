@@ -1,0 +1,151 @@
+@media (max-width: 1120px) {
+
+    .container {
+        width: 900px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+    
+}
+
+/* Для планшетов, ширина которых меньше чем 992px (в вертикальном виде) */
+@media (max-width: 992px) {
+    .container {
+        width: 760px;
+    }
+
+    .main h1 {
+        font-size: 85px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .tour_grid {
+        grid-template-columns: repeat(2, 360px);
+        justify-content: center;
+    }
+
+}
+
+/* Для телефонов, ширина меньше чем 768px (в горизонтальном виде) */
+@media (max-width: 768px) {
+    .container {
+        width: 500px;
+    }
+
+    .main {
+        height: 590px;
+    }
+
+    .main h1 {
+        font-size: 60px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav{
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0; bottom: 0; left: 0; right: 0;
+        z-index: 50;
+        overflow-y: auto;
+        padding: 50px 40px;
+        background-color: black;
+        animation: burgerAnimation 0.4s;
+    }
+
+    .tour_grid {
+        grid-template-columns: 360px;
+        justify-content: center;
+    }
+
+    .heading a {
+        display: none;
+    }
+
+    .white_box {
+        padding: 43px;
+        font-size: 12px;
+    }
+
+    .view_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .view_item, .end {
+        font-size: 13px;
+    }
+
+}
+
+/* Для телефонов, ширина меньше чем 576px (в вертикальном виде) */
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .main h1 {
+        font-size: 36px;
+    }
+
+    .tour_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .heading a {
+        display: none;
+    }
+
+    .white_box {
+        padding: 43px;
+        font-size: 12px;
+    }
+
+    .end {
+
+font-size: 13px;
+font-weight: 500;
+line-height: 15.85px;
+text-align: center;
+
+    }
+
+    .menu {
+        display: none;
+    }
+
+        .hamburger { display: flex }
+    
+        .nav{
+            display: none;
+            flex-direction: column;
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            top: 0; bottom: 0; left: 0; right: 0;
+            z-index: 50;
+            overflow-y: auto;
+            padding: 50px 40px;
+            background-color: black;
+            animation: burgerAnimation 0.4s;
+        }
+    }
+    
+    @keyframes burgerAnimation {
+        from {opacity: 0}
+        to {opacity: 1}
+    }

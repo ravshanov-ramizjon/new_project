@@ -1,0 +1,87 @@
+@media (max-width: 1200px) {
+
+    .container {
+        width: 900px;
+        background-color: aqua;
+    }
+
+ 
+}
+
+/* Ð”Ð»Ñ Ð¿Ð»Ð°Ð½ÑˆÐµÑ‚Ð¾Ð², ÑˆÐ¸Ñ€Ð¸Ð½Ð° ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ñ… Ð¼ÐµÐ½ÑŒÑˆÐµ Ñ‡ÐµÐ¼ 992px (Ð² Ð²ÐµÑ€Ñ‚Ð¸ÐºÐ°Ð»ÑŒÐ½Ð¾Ð¼ Ð²Ð¸Ð´Ðµ) */
+@media (max-width: 992px) {
+    .container {
+        width: 700px;
+    }
+
+    .promo h1 {
+        font-size: 85px;
+    }
+
+    .tour_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
+
+/* Ð”Ð»Ñ Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½Ð¾Ð², ÑˆÐ¸Ñ€Ð¸Ð½Ð° Ð¼ÐµÐ½ÑŒÑˆÐµ Ñ‡ÐµÐ¼ 768px (Ð² Ð³Ð¾Ñ€Ð¸Ð·Ð¾Ð½Ñ‚Ð°Ð»ÑŒÐ½Ð¾Ð¼ Ð²Ð¸Ð´Ðµ) */
+@media (max-width: 768px) {
+    .container {
+        width: 500px;
+    }
+
+    .promo {
+        height: 590px;
+    }
+
+    .promo h1 {
+        font-size: 60px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .tour_grid {
+        grid-template-columns: repeat(1, 360px);
+        justify-content: center;
+    }
+    .excurs_grid{
+        grid-template-columns: 1fr;
+    }
+    .excurs_item, .excurs_desc{
+        font-size: 13px;
+    }
+
+}
+
+/* Ð”Ð»Ñ Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½Ð¾Ð², ÑˆÐ¸Ñ€Ð¸Ð½Ð° Ð¼ÐµÐ½ÑŒÑˆÐµ Ñ‡ÐµÐ¼ 576px (Ð² Ð²ÐµÑ€Ñ‚Ð¸ÐºÐ°Ð»ÑŒÐ½Ð¾Ð¼ Ð²Ð¸Ð´Ðµ) */
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .promo h1 {
+        font-size: 36px;
+    }
+
+    .tour_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .heading a {
+        display: none;
+    }
+
+    .white_box {
+        padding: 43px;
+        font-size: 12px;
+    }
+
+}
